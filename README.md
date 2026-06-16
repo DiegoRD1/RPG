@@ -1,0 +1,59 @@
+📜 Sobre o Projeto
+
+O reino de Valdória está preso em um inverno eterno. A Pedra do Fogo foi roubada pelo dragão Ignaroth e escondida no fundo do Vulcão. Você assume o papel do último cavaleiro do rei, com a missão de atravessar três zonas distintas, derrotar os guardiões, coletar artefatos mágicos e salvar o continente.
+O projeto foi construído para demonstrar arquitetura orientada a dados, manipulação de grafos (para o mapa) e Inteligência Artificial baseada em turnos em um ambiente de terminal enriquecido visualmente.
+
+🌟 Features Principais
+
+Exploração com Fog of War: O mapa é um Grafo Direcionado. Os caminhos ficam ocultos até que você se arrisque por eles.
+Sistema de Exaustão: Cada movimento custa energia. Ficar sem energia começa a drenar sua Vida (HP). Descansar em zonas seguras é vital.
+Combate Tático: O combate não é apenas sorte. Inimigos dão sinais (telegrafam) de que vão usar golpes mortais, forçando você a usar a Ação de Defesa no momento certo.
+Sistema de Loot: Encontre poções, force fechaduras de baús abandonados e faça sacrifícios de sangue em altares para melhorar seus status.
+Progressão Épica (Chefes): Derrote o Lobo Alfa, o Urso Colossal e o Orc Senhor da Guerra para coletar os itens necessários para sobreviver à sala do Boss Final.
+
+⚙️ Instalação e Execução
+
+O jogo foi feito para rodar em terminais de computador (Prompt de Comando, PowerShell, Terminal do Linux/Mac ou direto no terminal do VS Code).
+
+1. Clonando o Repositório
+
+git clone https://github.com/SEU_USUARIO/reino-de-valdoria.git
+cd reino-de-valdoria
+
+2. Instalando as Dependências
+
+O projeto utiliza a biblioteca externa rich para formatar textos, cores e tabelas no terminal.
+
+pip install -r requirements.txt
+
+
+3. Rodando o Jogo
+
+python rpg.py
+
+
+🎮 Como Jogar (Controles)
+
+Siga os menus interativos apresentados na tela e digite o número correspondente à sua escolha, apertando ENTER em seguida.
+
+Durante a Exploração:
+
+1, 2, 3... - Move para o caminho indicado.
+
+D - Descansa (Apenas em locais seguros).
+
+0 - Abre o painel de Status do Herói.
+
+Durante o Combate:
+
+1 - Ataque Rápido: 85% de precisão.
+
+2 - Ataque Pesado: 50% de precisão, mas causa dano crítico.
+
+3 - Defesa: Corta o dano do inimigo pela metade no próximo turno.
+
+4 - Poção: Recupera 30 HP instantaneamente.
+
+5 - Fuga: Tenta escapar da batalha (Não funciona contra Chefes).
+
+Projeto acadêmico/pessoal desenvolvido com foco em estruturas de dados em Python.
